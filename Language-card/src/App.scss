@@ -1,1 +1,9 @@
 @import './scss/variables';
+
+
+body{
+    background-color: $backGroundOne;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

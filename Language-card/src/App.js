@@ -4,7 +4,7 @@ import Component from './components/Component';
 
 
 
-function App() {
+const App = () => {
   return (
     <div>
       <Component/>
