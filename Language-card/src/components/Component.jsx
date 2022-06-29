@@ -9,7 +9,9 @@ const Component = () => {
             <header><img src={react} alt="" /></header>
             <div className="langContainer">
                 <p>Languages</p>
+                <div className="lang2">
                 {languages.map((item, index) => <Card {...item} key={index}/>)}
+                </div>
             </div>
         </div>
         

@@ -3,32 +3,41 @@
 header{
     text-align: center;
     img{
-        width: 400px;
+        width: 600px;
         margin-top:3rem;
     }
 }
 
 .langContainer{
     background-color:$backGroundTwo;
-    width: 400px;
+    width: 600px;
     border-radius:1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     
     p{
         font-size:2rem;
         font-weight:bold;
-        display: inline-block;
+        margin-top:1.5rem;
+        padding: 0.5rem;
+    }
+    .lang2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     .cards{
         margin:1rem; 
         background-color:$backGroundCard;
         padding:1rem;
         border-radius:1rem;
+        &:hover{
+           transform: scale(1.1,1.1);
+           transition-duration: 2s;
+           border: 3px solid black;
+        }
         
     }
     img{
-        width:100px;
+        width:200px;
+        height:200px;
     }
 }
