@@ -1,22 +1,34 @@
 import { useState } from "react";
 
 const Card = (languages) => {
-    const [card, setCard] = useState
+   const [showLogo, setShowLogo] = useState(true);
 
-
-   const turn = () => {
-    setCard()
-   }
-
+   const handleClick = (e) => {
+    setShowLogo(!showLogo);
+    // setInterval(function () {
+    //     e.preventDefault();
+    // },3000)
+   };
 
 
     const {name, img, options} = languages;
     return(
-         <div onclick={turn} className="cards">{options}
+         <div onclick className="cards" onClick={handleClick}>
+            {showLogo ? (
+
+            <div>
             <img src={img} alt="img" />
             <div className="title">
                 <p>{name}</p>
             </div>
+           </div>) : (
+           
+           <ul>
+            {options.map((element, index) =>{
+                return <li key={index}>{element}</li>
+            })}
+           </ul>
+        )}
                         
 
         </div>

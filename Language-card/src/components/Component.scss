@@ -12,6 +12,7 @@ header{
     background-color:$backGroundTwo;
     width: 600px;
     border-radius:1rem;
+    overflow: hidden;
     
     p{
         font-size:2rem;
@@ -41,3 +42,4 @@ header{
         height:200px;
     }
 }
+
